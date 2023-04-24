@@ -248,6 +248,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "syncfusion_flutter_charts",
+      "rootUri": "file:///Users/tung-sih/.pub-cache/hosted/pub.dev/syncfusion_flutter_charts-21.1.39",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "syncfusion_flutter_core",
+      "rootUri": "file:///Users/tung-sih/.pub-cache/hosted/pub.dev/syncfusion_flutter_core-21.1.39",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///Users/tung-sih/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
@@ -284,7 +296,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-28T05:00:38.764985Z",
+  "generated": "2023-04-18T07:07:24.328750Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

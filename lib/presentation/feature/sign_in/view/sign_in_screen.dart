@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:marzbo_app_mobile/presentation/feature/sign_in/sign_up/view/sign_up_screen.dart';
+import 'package:marzbo_app_mobile/presentation/feature/home_page/view/home_page_screen.dart';
+import 'package:marzbo_app_mobile/presentation/feature/sign_up/view/sign_up_screen.dart';
 import 'package:marzbo_app_mobile/resources/app_colors.dart';
 import 'package:marzbo_app_mobile/resources/app_dimensions.dart';
 import 'package:marzbo_app_mobile/widgets/basic_layout.dart';
@@ -46,15 +47,15 @@ class _SignInScreenState extends State<SignInScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                height: 1 / 3,
-                child: Image.asset(
-                  'images/Untitled_Artwork.png',
-                  width: 300,
-                  height: 1 / 3,
-                  fit: BoxFit.fill,
-                ),
-              ),
+              // Container(
+              //   height: 1 / 3,
+              //   child: Image.asset(
+              //     'images/Untitled_Artwork.png',
+              //     width: 300,
+              //     height: 1 / 3,
+              //     fit: BoxFit.fill,
+              //   ),
+              // ),
               Heading1Text(
                 "Login",
                 color: AppColors.primaryColor500,
@@ -66,68 +67,29 @@ class _SignInScreenState extends State<SignInScreen> {
               const Spacing(1.5),
               _buildTextPasswordField(),
               const Spacing(1.5),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                      child: Theme(
-                    data: ThemeData(
-                        unselectedWidgetColor: Colors.grey // Your color
-                        ),
-                    child: Row(
-                      children: [
-                        Checkbox(
-                            splashRadius: 1,
-                            checkColor: Colors.white,
-                            activeColor: AppColors.primaryColor500,
-                            hoverColor: Colors.white,
-                            value: _isChecked,
-                            onChanged: _handleRemeberme),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 5),
-                          child: BodyLText(
-                            'Remember me',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w400,
-                                fontSize: 18.sp),
-                          ),
-                        )
-                      ],
-                    ),
-                  )),
-                  ButtonText(
-                    "Forgot password?",
-                    style: TextStyle(
-                        color: Color(0xff457B9D),
-                        fontWeight: FontWeight.w400,
-                        fontSize: 18.sp),
-                  ),
-                ],
-              ),
+              _buildCheckRBPW(),
               const Spacing(3),
               const _SignInButton(),
               const Spacing(3),
               Row(children: <Widget>[
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
                 Center(
                   child: BodyText(
                     " Or, login with... ",
                     style: TextStyle(
-                        color: Color(0xff9A9B9C),
+                        color: const Color(0xff9A9B9C),
                         fontWeight: FontWeight.w400,
                         fontSize: 18.sp),
                   ),
                 ),
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
               ]),
               const Spacing(3),
-              _buildOtherOptionsLogin(),
-              Spacing(4),
+              const _buildOtherOptionsLogin(),
+              const Spacing(4),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   BodyMText(
                     'Don’t have an account?',
@@ -138,16 +100,71 @@ class _SignInScreenState extends State<SignInScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SignUpScreen()));
+                                builder: (context) => const SignUpScreen()));
                       },
                       child: BodyXLText(
                         'Register',
-                        color: Color.fromARGB(255, 0, 1, 1),
+                        color: const Color.fromARGB(255, 0, 1, 1),
                       ))
                 ],
-                mainAxisAlignment: MainAxisAlignment.center,
               ),
             ]),
+      ),
+    );
+  }
+
+  Widget _buildCheckRBPW() {
+    return Container(
+      height: 30.h,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+              height: 25.h,
+              child: Theme(
+                data: ThemeData(unselectedWidgetColor: Colors.grey // Your color
+                    ),
+                child: SizedBox(
+                  height: 25.h,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Transform.scale(
+                        scale: 0.9,
+                        child: Checkbox(
+                            splashRadius: 2,
+                            checkColor: Colors.white,
+                            activeColor: AppColors.primaryColor500,
+                            hoverColor: Colors.white,
+                            value: _isChecked,
+                            onChanged: _handleRemeberme),
+                      ),
+                      Text(
+                        'Remember me',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 18.sp),
+                      ),
+                    ],
+                  ),
+                ),
+              )),
+          Container(
+            padding: EdgeInsets.only(top: 4.r),
+            height: 25.h,
+            child: ButtonText(
+              "Forgot password?",
+              style: TextStyle(
+                color: const Color(0xff457B9D),
+                fontWeight: FontWeight.w400,
+                fontSize: 18.sp,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -160,7 +177,7 @@ class _SignInScreenState extends State<SignInScreen> {
           height: 32.h,
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
-        contentPadding: EdgeInsets.all(2.5),
+        contentPadding: const EdgeInsets.all(2.5),
         labelStyle: TextStyle(
             fontFamily: 'Nunito',
             color: const Color(0xff9A9B9C),
@@ -170,7 +187,7 @@ class _SignInScreenState extends State<SignInScreen> {
           padding: EdgeInsets.only(right: 8.r),
           child: Image.asset(
             'images/icons/lock-closed.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
       ),
@@ -191,14 +208,14 @@ class _SignInScreenState extends State<SignInScreen> {
           padding: EdgeInsets.only(right: 8.r),
           child: Image.asset(
             'images/icons/icon_at.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
         contentPadding:
-            EdgeInsets.all(2.5), //prefixIconColor: Color(0xff9A9B9C),
+            const EdgeInsets.all(2.5), //prefixIconColor: Color(0xff9A9B9C),
 
-        fillColor: Color(0xff9A9B9C),
+        fillColor: const Color(0xff9A9B9C),
         labelText: 'Phone number*',
         labelStyle: TextStyle(
             color: const Color(0xff9A9B9C),
@@ -214,8 +231,6 @@ class _SignInScreenState extends State<SignInScreen> {
       var password = prefs.getString("password") ?? "";
 
       var remeberMe = prefs.getBool("remember_me") ?? false;
-      print(remeberMe);
-      print(password);
 
       if (remeberMe) {
         setState(() {
@@ -259,23 +274,25 @@ class _buildOtherOptionsLogin extends StatelessWidget {
           height: 46.h,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xffD9D9D9))),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'images/Facebook.png',
-                width: 59.w,
-                height: 32.h,
-              ),
-              BodyText(
-                'Facebook',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 13.sp,
-                    fontWeight: FontWeight.w500),
-              )
-            ],
+              border: Border.all(color: const Color(0xffD9D9D9))),
+          child: InkWell(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'images/Facebook.png',
+                  width: 59.w,
+                  height: 32.h,
+                ),
+                BodyText(
+                  'Facebook',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 13.sp,
+                      fontWeight: FontWeight.w500),
+                )
+              ],
+            ),
           ),
         ),
         Container(
@@ -283,7 +300,7 @@ class _buildOtherOptionsLogin extends StatelessWidget {
           height: 46.h,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xffD9D9D9))),
+              border: Border.all(color: const Color(0xffD9D9D9))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -319,7 +336,11 @@ class _SignInButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(AppDimensions.roundedRadius),
       child: InkWell(
         borderRadius: BorderRadius.circular(AppDimensions.roundedRadius),
-        onTap: () {},
+        onTap: () {
+          print('12');
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const BottomTabbar()));
+        },
         child: Container(
           width: double.infinity,
           height: AppDimensions.buttonHeight,
@@ -331,7 +352,7 @@ class _SignInButton extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 1,
                   blurRadius: 3,
-                  offset: Offset(0, 3), // changes position of shadow
+                  offset: const Offset(0, 3), // changes position of shadow
                 ),
               ],
               color: AppColors.primaryColor500),

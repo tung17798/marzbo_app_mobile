@@ -6,12 +6,12 @@ class AppDimensions {
 
   // Size / padding and radius etc...
   static const double defaultPadding = 15;
-  static const double defaultLPadding = 24;
+  static const double defaultLPadding = 22;
   static const double defaultVerticalPadding = 24;
   static const double dialogMargin = 16;
   static const double dialogInnerPadding = 24;
   static const double defaultSPadding = 10;
-  static const double defaultXSPadding = 8;
+  static const double defaultXSPadding = 10;
   static const double defaultXXSPadding = 5;
 
   static const double defaultRadius = 12;

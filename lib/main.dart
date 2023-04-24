@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:marzbo_app_mobile/presentation/feature/sign_in/sign_up/view/sign_up_screen.dart';
+import 'package:marzbo_app_mobile/presentation/feature/splash/view/splash_screen.dart';
 
 import 'presentation/feature/sign_in/view/sign_in_screen.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(419, 926),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
             fontFamily: 'Nunito',
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
-          home: const SignUpScreen(),
+          home: const SplashScreen(),
         );
       },
     );

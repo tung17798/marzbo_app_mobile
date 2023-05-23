@@ -1,10 +1,14 @@
+import 'package:floating_draggable_widget/floating_draggable_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:marzbo_app_mobile/presentation/feature/created_post/view/creat_post_form.dart';
 import 'package:marzbo_app_mobile/presentation/feature/home_page/view/flow_chart_homepage.dart';
 import 'package:marzbo_app_mobile/presentation/feature/home_page/view/list_activity_home_page.dart';
+import 'package:marzbo_app_mobile/presentation/feature/report_schedule/view/draggable_button.dart';
+import 'package:marzbo_app_mobile/presentation/feature/report_schedule/view/report_schedule_screen.dart';
 import 'package:marzbo_app_mobile/presentation/feature/utils/size_config.dart';
 import 'package:marzbo_app_mobile/resources/app_colors.dart';
 import 'package:marzbo_app_mobile/resources/app_dimensions.dart';
@@ -25,8 +29,8 @@ class _BottomTabbarState extends State<BottomTabbar> {
   int _selectedIndex = 0;
   final List<Widget> pages = [
     const HomePageScreen(),
-    Container(),
-    Container(),
+    CreatedPostForm(),
+    ReportScheduleScreens(),
     Container(),
   ];
 
@@ -38,9 +42,49 @@ class _BottomTabbarState extends State<BottomTabbar> {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      builder: (context, child) {
-        return BasicLayout(
+    return FloatingDraggableWidget(
+        floatingWidget: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CreatedPostForm(),
+                ));
+          },
+          child: Image.asset(
+            'images/icons/Edit.png',
+            width: 32.w,
+            height: 32.h,
+          ),
+          backgroundColor: Color(0xffA8DADC),
+        ),
+        deleteWidgetAnimationCurve: Curves.linear,
+        floatingWidgetHeight: 54.h,
+        floatingWidgetWidth: 54.w,
+        deleteWidgetDecoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white12, Colors.grey],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [.0, 1],
+          ),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(50),
+            topRight: Radius.circular(50),
+          ),
+        ),
+        deleteWidget: Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(width: 2, color: Colors.black87),
+          ),
+          child: const Icon(Icons.close, color: Colors.black87),
+        ),
+        onDeleteWidget: () {
+          debugPrint('Widget deleted');
+        },
+        // autoAlign: true,
+        mainScreenWidget: BasicLayout(
           color: Colors.white,
           headerVisible: false,
           bottomNavigationBar: Theme(
@@ -188,16 +232,12 @@ class _BottomTabbarState extends State<BottomTabbar> {
                 ),
               ];
             },
-            body: Scaffold(
-              body: IndexedStack(
-                index: _selectedIndex,
-                children: pages,
-              ),
+            body: IndexedStack(
+              index: _selectedIndex,
+              children: pages,
             ),
           ),
-        );
-      },
-    );
+        ));
   }
 }
 

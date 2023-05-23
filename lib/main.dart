@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:marzbo_app_mobile/presentation/feature/splash/view/splash_screen.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'presentation/feature/sign_in/view/sign_in_screen.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
+          localizationsDelegates: const [GlobalMaterialLocalizations.delegate],
           debugShowCheckedModeBanner: false,
           title: 'Material App',
           theme: ThemeData(

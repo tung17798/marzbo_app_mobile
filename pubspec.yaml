@@ -41,6 +41,14 @@ dependencies:
   shared_preferences: ^2.0.20
   syncfusion_flutter_charts: ^21.1.39
   intl: ^0.17.0
+  floating_draggable_widget: ^2.1.2
+  rxdart: ^0.27.7
+  flutter_localizations:
+    sdk: flutter
+  video_player: ^2.6.1
+  image_picker: ^0.8.7+5
+  simple_gesture_detector: ^0.2.0
+  table_calendar: ^3.0.8
 
 dev_dependencies:
   flutter_test:

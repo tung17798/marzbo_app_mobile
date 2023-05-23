@@ -5,9 +5,7 @@ import 'package:marzbo_app_mobile/presentation/feature/sign_in/view/sign_in_scre
 import 'package:marzbo_app_mobile/resources/app_colors.dart';
 import 'package:marzbo_app_mobile/resources/app_dimensions.dart';
 import 'package:marzbo_app_mobile/widgets/basic_layout.dart';
-import 'package:marzbo_app_mobile/widgets/input/password_field.dart';
 import 'package:marzbo_app_mobile/widgets/input/password_input.dart';
-import 'package:marzbo_app_mobile/widgets/input/text_input_field.dart';
 import 'package:marzbo_app_mobile/widgets/spacing.dart';
 import 'package:marzbo_app_mobile/widgets/typography/body_text.dart';
 import 'package:marzbo_app_mobile/widgets/typography/heading_text.dart';
@@ -114,7 +112,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     textAlign: TextAlign.start,
                                     text: TextSpan(
                                         style: TextStyle(
-                                          color: Color(0xff333333),
+                                          color: const Color(0xff333333),
                                           fontSize: 12.sp,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -124,7 +122,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                                 text:
                                                     'By signing up, you’re agree with our ',
                                                 style: TextStyle(
-                                                  color: Color(0xff333333),
+                                                  color: const Color(0xff333333),
                                                   fontSize: 12.sp,
                                                   fontWeight: FontWeight.w400,
                                                 )),
@@ -133,12 +131,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                               style: TextStyle(
                                                   fontSize: 12.sp,
                                                   fontWeight: FontWeight.w400,
-                                                  color: Color(0xff407BFF)),
+                                                  color: const Color(0xff407BFF)),
                                             ),
                                             TextSpan(
                                                 text: 'and',
                                                 style: TextStyle(
-                                                  color: Color(0xff333333),
+                                                  color: const Color(0xff333333),
                                                   fontSize: 12.sp,
                                                   fontWeight: FontWeight.w400,
                                                 )),
@@ -147,7 +145,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                               style: TextStyle(
                                                   fontSize: 12.sp,
                                                   fontWeight: FontWeight.w400,
-                                                  color: Color(0xff407BFF)),
+                                                  color: const Color(0xff407BFF)),
                                             )
                                           ]),
                                         ]),
@@ -164,21 +162,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const _SignUpButton(),
               const Spacing(3),
               Row(children: <Widget>[
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
                 Center(
                   child: BodyText(
                     " Or, sign up with... ",
                     style: TextStyle(
-                        color: Color(0xff9A9B9C),
+                        color: const Color(0xff9A9B9C),
                         fontWeight: FontWeight.w400,
                         fontSize: 18.sp),
                   ),
                 ),
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
               ]),
               const Spacing(3),
-              _buildOtherOptionsLogin(),
-              Spacing(3),
+              const _buildOtherOptionsLogin(),
+              const Spacing(3),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -213,7 +211,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           height: 32.h,
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
-        contentPadding: EdgeInsets.all(2.5),
+        contentPadding: const EdgeInsets.all(2.5),
         labelStyle: TextStyle(
             fontFamily: 'Nunito',
             color: const Color(0xff9A9B9C),
@@ -223,7 +221,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           padding: EdgeInsets.only(right: 8.r),
           child: Image.asset(
             'images/icons/lock-closed.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
       ),
@@ -244,14 +242,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
           padding: EdgeInsets.only(right: 8.r),
           child: Image.asset(
             'images/icons/call.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
         contentPadding:
-            EdgeInsets.all(2.5), //prefixIconColor: Color(0xff9A9B9C),
+            const EdgeInsets.all(2.5), //prefixIconColor: Color(0xff9A9B9C),
 
-        fillColor: Color(0xff9A9B9C),
+        fillColor: const Color(0xff9A9B9C),
         labelText: 'Phone number*',
         labelStyle: TextStyle(
             color: const Color(0xff9A9B9C),
@@ -273,12 +271,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
           padding: EdgeInsets.only(right: 8.r),
           child: Image.asset(
             'images/icons/icon_at.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
-        contentPadding: EdgeInsets.all(2.5), //
-        fillColor: Color(0xff9A9B9C),
+        contentPadding: const EdgeInsets.all(2.5), //
+        fillColor: const Color(0xff9A9B9C),
         labelText: 'Email*',
         labelStyle: TextStyle(
             color: const Color(0xff9A9B9C),
@@ -302,12 +300,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ),
           child: Image.asset(
             'images/icons/person-circle.png',
-            color: Color(0xff9A9B9C),
+            color: const Color(0xff9A9B9C),
           ),
         ),
         floatingLabelBehavior: FloatingLabelBehavior.never,
         contentPadding:
-            EdgeInsets.all(2.5), //        fillColor: Color(0xff9A9B9C),
+            const EdgeInsets.all(2.5), //        fillColor: Color(0xff9A9B9C),
         labelText: 'Full name*',
         labelStyle: TextStyle(
             color: const Color(0xff9A9B9C),
@@ -368,7 +366,7 @@ class _buildOtherOptionsLogin extends StatelessWidget {
           height: 46.h,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xffD9D9D9))),
+              border: Border.all(color: const Color(0xffD9D9D9))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -392,7 +390,7 @@ class _buildOtherOptionsLogin extends StatelessWidget {
           height: 46.h,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xffD9D9D9))),
+              border: Border.all(color: const Color(0xffD9D9D9))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -440,7 +438,7 @@ class _SignUpButton extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 1,
                   blurRadius: 3,
-                  offset: Offset(0, 3), // changes position of shadow
+                  offset: const Offset(0, 3), // changes position of shadow
                 ),
               ],
               color: AppColors.primaryColor500),

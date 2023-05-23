@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		LqOHteSZRNWY2/b+z159J9zNnrs=
+		GbqecAiHLAdOeBMX0lrHVOu4FW0=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8DZPig6ZEI2gryshK8lERCGz0Ec=
+		Qrx5GDG0YMeqm9gIAExnRnR4GTk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		+hj5ctw5gvOlPJeaAiSKveipRqk=
+		4G+3KOfeH2M5cq4Hi2XqBhzgc0Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		i+3xe8hIvK3B3WBFNMWBYdOO3K0=
+		bLOP5rm7cxTxs5xK7odyV0zw6oQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -88,6 +88,22 @@
 		<data>
 		K9j/+Qux5fbGNT0nsPSdAEC0jJk=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(1).png</key>
+		<data>
+		I4OGiWIwV1DHRZQIKW18p8rHGtI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(2).png</key>
+		<data>
+		0MWwQ3ajjgQ7CFmy2ZRas3X+HdY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(3).png</key>
+		<data>
+		CYCslEc0R2Cz4eFbIp+8xEamZFA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons.png</key>
+		<data>
+		+4y+Ka3ycu6Ao9x6pJrHTSDDOMM=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/images/Rectangle%2059.png</key>
 		<data>
 		uuQ96OprHkZoqoriAd0fZ8ndjvs=
@@ -107,6 +123,14 @@
 		<key>Frameworks/App.framework/flutter_assets/images/Work%20In%20Beanbag.png</key>
 		<data>
 		G5pUlI0f+3V7bc1B5w7/VtRgK8M=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/iconInstaInstagram.png</key>
+		<data>
+		Ox2+Za2uhGHVhrD8g6M9VdI3lfc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/icons/Edit.png</key>
+		<data>
+		PCBrlX+2P+VuehCKPaxjcMneFms=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/images/icons/Group%20415.png</key>
 		<data>
@@ -176,6 +200,10 @@
 		<data>
 		l26KsFwRD7s6MlKFKLne/s2ZQJM=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/images/luoi.png</key>
+		<data>
+		jL5OFxWjDvlPgofNn7RkcSPBJO8=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/images/style=fill.png</key>
 		<data>
 		GPrcMyrMdEW/hx2WkFjQ2teXRYE=
@@ -186,7 +214,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		/H9phYspTCzj8cajfz6ZAe91cmk=
+		cgqlKp19fPbvY3F6HeoxS5sbQLg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -298,7 +326,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ey9uHQ4+MtTBOHQy4rU8WnsBxng=
+		aBb/qY5/i5AHN6aOX1I0x8Py1Bo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -381,7 +409,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L/4cOlmz9oq9BR7RV01ItknbdH57/s0CM13gTYCXEZ8=
+			Cdq2PhGxvhWc7foYDsrCDjCz9x87Pq2qU32UxI9afh4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -395,14 +423,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Os4m78CTiX/ODMxyz9HBkciK/5C31uk2DdiM4sOx8c=
+			taXDTyB8UpZnkF+wS1TiDUzQ6jEjT9I4l/pxSXV8jOM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VxEtfiXjoGWLffGb2inOozGSfzQPyLdjifFna3Fsw04=
+			wWSmjPltzoaAMHgRmYEou3O+wPuOyO+TUQRx/zWhWrQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -416,7 +444,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VB/xPSQltITgi/SA9iLcU+DMOa2/p3MEib26x9ADMYs=
+			cdw/xEpzGDEM+8I3zU23xqbRVKECtsRh1cy8z4oRCvc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -454,6 +482,34 @@
 			HbPfZkhxPaaqQlO+/1a98Vx8SK5SewrzV/xjQZtPO+U=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(1).png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N4BLLLa4NHaeW0KeCxJV1TsharGfbBiRg214/A8XMcs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(2).png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7T6EW+rePVDkTRb/0t/GKqTM/R1HScqi3KVA7wcaKAw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons%20(3).png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SbU6a85990yEm0pnolKvHQcI8lQEdLK/lspzsqMABj4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/Icons.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n+VAsSTjs7/H0W1xLnWbR6dj4w0D58UC7fWBR/5TDXU=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/images/Rectangle%2059.png</key>
 		<dict>
 			<key>hash2</key>
@@ -487,6 +543,20 @@
 			<key>hash2</key>
 			<data>
 			L0kJrQ25q9PDpkdTh6ccwCIVrfcbEpG8ZvT+W1LR3YU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/iconInstaInstagram.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o7UtK/GNwSx4Yzf0lDG7Kf/N+a5gx8XRR3IpczQb6H4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/icons/Edit.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			raK62L3u+KDPu02dhOIBlnMrGBffSBf5jqOrulIXi7c=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/images/icons/Group%20415.png</key>
@@ -608,6 +678,13 @@
 			1z6oZwVt7VN4ZXEi3vz5yiq9PkFqARZirL6f9etp0mg=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/images/luoi.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DcfNPeXcKa9ZewMsOzu31csiWuHkWJ+7znWXtflRr88=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/images/style=fill.png</key>
 		<dict>
 			<key>hash2</key>
@@ -626,7 +703,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rKz7bh0y1xMubFfhqFnuGkmCsDoPLO2kPaIOl79HBK0=
+			yvCX5AnwtjXJVyYkxaMHd9DwUqm4FJZosQAgy1GsGfc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

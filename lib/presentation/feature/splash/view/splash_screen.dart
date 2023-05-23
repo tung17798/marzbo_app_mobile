@@ -55,30 +55,30 @@ class _SplashScreenState extends State<SplashScreen>
                           height: 10,
                           child: TabBar(
                             indicator: BoxDecoration(
-                              color: Color(0xff272727),
+                              color: const Color(0xff272727),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            labelPadding: EdgeInsets.all(3),
-                            labelColor: Color(0xff828282),
+                            labelPadding: const EdgeInsets.all(3),
+                            labelColor: const Color(0xff828282),
                             indicatorSize: TabBarIndicatorSize.label,
-                            indicatorColor: Color(0xff828282),
+                            indicatorColor: const Color(0xff828282),
                             controller: _tabController,
                             isScrollable: true,
                             tabs: <Widget>[
                               Tab(
-                                child: Container(
+                                child: SizedBox(
                                   width: 30.w,
                                   height: 10.h,
                                 ),
                               ),
                               Tab(
-                                child: Container(
+                                child: SizedBox(
                                   width: 30.w,
                                   height: 10.h,
                                 ),
                               ),
                               Tab(
-                                child: Container(
+                                child: SizedBox(
                                   width: 30.w,
                                   height: 20.h,
                                 ),
@@ -91,16 +91,14 @@ class _SplashScreenState extends State<SplashScreen>
                     ],
                   ),
                 ),
-                Container(
-                  child: Positioned(
-                    top: 160.r,
-                    right: 40.r,
-                    left: -10,
-                    child: SizedBox(
-                        height: 393.h,
-                        width: 458.w,
-                        child: Image.asset('images/illustration 1.png')),
-                  ),
+                Positioned(
+                  top: 160.r,
+                  right: 40.r,
+                  left: -10,
+                  child: SizedBox(
+                      height: 393.h,
+                      width: 458.w,
+                      child: Image.asset('images/illustration 1.png')),
                 ),
                 Positioned(
                   top: -200.r,
@@ -124,7 +122,7 @@ class _SplashScreenState extends State<SplashScreen>
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
+                  SizedBox(
                       width: 79.w,
                       height: 33.h,
                       child: _SkipButton(
@@ -132,10 +130,10 @@ class _SplashScreenState extends State<SplashScreen>
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SignInScreen()));
+                                  builder: (context) => const SignInScreen()));
                         },
                       )),
-                  Container(
+                  SizedBox(
                       width: 79.w,
                       height: 33.h,
                       child: _NextButton(
@@ -146,7 +144,7 @@ class _SplashScreenState extends State<SplashScreen>
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SignInScreen()));
+                                    builder: (context) => const SignInScreen()));
                           }
                         },
                       )),
@@ -160,7 +158,7 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   Widget tabbarView() {
-    return Container(
+    return SizedBox(
       width: 300.w,
       height: 200.h,
       child: TabBarView(
@@ -175,11 +173,11 @@ class _SplashScreenState extends State<SplashScreen>
                 BodyLText(
                   'L1',
                   style: TextStyle(
-                      color: Color(0xff414D54),
+                      color: const Color(0xff414D54),
                       fontSize: 26.sp,
                       fontWeight: FontWeight.w700),
                 ),
-                Spacing(0.5),
+                const Spacing(0.5),
                 SizedBox(
                   child: BodyMText(
                     'Our goal is to ensure that you have everything you need to feel comfortable, confident, and ready to make an impact.',
@@ -192,7 +190,7 @@ class _SplashScreenState extends State<SplashScreen>
           MediaQuery.removePadding(
             context: context,
             removeTop: true,
-            child: Text('2'),
+            child: const Text('2'),
           ),
           MediaQuery.removePadding(
             context: context,
@@ -203,11 +201,11 @@ class _SplashScreenState extends State<SplashScreen>
                 BodyLText(
                   'Let"s Get Started',
                   style: TextStyle(
-                      color: Color(0xff414D54),
+                      color: const Color(0xff414D54),
                       fontSize: 28.sp,
                       fontWeight: FontWeight.w700),
                 ),
-                Spacing(0.5),
+                const Spacing(0.5),
                 SizedBox(
                   child: BodyMText(
                       'Our goal is to ensure that you have everything\nyou need to feel comfortable, confident, and \nready to make an impact.'),
@@ -251,14 +249,14 @@ class _NextButton extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 1,
                   blurRadius: 3,
-                  offset: Offset(0, 3), // changes position of shadow
+                  offset: const Offset(0, 3), // changes position of shadow
                 ),
               ],
               color: AppColors.primaryColor500),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
+              const Icon(
                 Icons.arrow_forward,
                 color: Colors.white,
               ),
@@ -298,12 +296,12 @@ class _SkipButton extends StatelessWidget {
             children: [
               BodyLText("Skip",
                   textAlign: TextAlign.center,
-                  color: Color(0xff1D3557),
+                  color: const Color(0xff1D3557),
                   style: BodyLText.defaultStyle.copyWith(
                     fontSize: 15.sp,
                     fontWeight: FontWeight.w500,
                   )),
-              Icon(
+              const Icon(
                 Icons.arrow_forward,
                 color: Colors.white,
               )

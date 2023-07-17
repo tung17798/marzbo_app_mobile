@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
 options: "39b2072554583fa0bc8009913ed9c93e6f36fd274269ba9f8acdbe8f9df86738"
-build_start_time: [1679936199, 515687942]
-build_end_time: [1679936201, 271550178]
+build_start_time: [1687490858, 648965835]
+build_end_time: [1687490864, 631549835]
 inputs:
-  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Flutter/GeneratedPluginRegistrant.swift": [1679936189, 369440078]
-  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Runner/AppDelegate.swift": [1639683103, 0]
-  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Runner/MainFlutterWindow.swift": [1639683103, 0]
+  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Flutter/GeneratedPluginRegistrant.swift": [1687490852, 127009391]
+  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Runner/AppDelegate.swift": [1681742604, 621530532]
+  "/Users/tung-sih/Marzbo Project/marzbo_app_mobile/macos/Runner/MainFlutterWindow.swift": [1681742604, 623232364]
